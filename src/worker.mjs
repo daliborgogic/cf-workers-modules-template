@@ -1,3 +1,9 @@
-addEventListener("fetch", (event) => {
-  event.respondWith(new Response('Wohoo!'))
-})
+export default {
+  async fetch(request, env) {
+    try {
+      return await new Response('Wohoo!')
+    } catch (e) {
+      return new Response(e.message)
+    }
+  }
+}
