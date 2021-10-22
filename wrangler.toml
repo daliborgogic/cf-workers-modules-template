@@ -1,6 +1,5 @@
-name = "service"
+name = "module"
 type = "javascript"
-account_id = ""
 compatibility_date = "2021-10-14"
 workers_dev = true
 route = ""
