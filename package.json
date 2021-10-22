@@ -9,8 +9,6 @@
     "build": "esbuild src/worker.mjs --format=esm --target=esnext --bundle --outdir=dist --out-extension:.js=.mjs  --minify --analyze",
     "pretest": "npm run build",
     "test": "ava --verbose test/*.spec.mjs",
-    "prepublish": "npm run test",
-    "publish": "npm test && npx wrangler publish",
     "preview": "miniflare dist/worker.mjs"
   },
   "devDependencies": {
