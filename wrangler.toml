@@ -1,0 +1,14 @@
+name = "service"
+type = "javascript"
+account_id = ""
+compatibility_date = "2021-10-14"
+workers_dev = true
+route = ""
+zone_id = ""
+
+[build.upload]
+format = "modules"
+dir = "dist"
+main = "./worker.mjs"
+
+
