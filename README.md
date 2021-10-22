@@ -1,5 +1,7 @@
 # cf-workers-modules-template
 
+![example workflow](https://github.com/cf-workers-modules-template/workflows/deploy.yml/badge.svg)
+
 > Cloudflare Workers provides a serverless execution environment that allows you to create entirely new applications or augment existing ones without configuring or maintaining infrastructure.
 
 > NOTE: Template uses ECMAScript module system 
