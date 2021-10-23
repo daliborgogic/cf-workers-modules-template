@@ -1,11 +1,11 @@
 {
   "name": "worker-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "module": "./dist/worker.mjs",
   "scripts": {
     "dev": "miniflare src/worker.mjs --modules --watch",
-    "build": "esbuild src/worker.mjs --format=esm --target=esnext --bundle --outdir=dist --out-extension:.js=.mjs  --minify --analyze",
+    "build": "esbuild src/worker.mjs --format=esm --target=esnext --bundle --platform=node --outdir=dist --out-extension:.js=.mjs  --minify --analyze",
     "pretest": "npm run build",
     "test": "ava --verbose test/*.spec.mjs",
     "preview": "miniflare dist/worker.mjs"
