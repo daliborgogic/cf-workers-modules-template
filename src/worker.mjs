@@ -1,11 +1,11 @@
 import { txt } from './txt.mjs'
 
 export default {
-  async fetch(request, env) {
+  async fetch() {
     try {
       return await new Response(txt)
-    } catch (e) {
-      return new Response(e.message)
+    } catch (error) {
+      return new Response(error.message)
     }
   }
 }
